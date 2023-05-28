@@ -1,24 +1,24 @@
-## Stornierungsvorhersage im Hotelgewerbe
-In diesem Projekt geht es darum, vorherzusagen, ob Hotelbuchungen storniert werden, um die Betriebsplanung zu optimieren und finanzielle Verluste zu minimieren. Wir nutzen verschiedene Machine Learning-Algorithmen wie Entscheidungsbäume (Random Forest), XGBoost und K-Nearest Neighbors (KNN).
+# Cancellation Prediction in the Hotel Industry
+This project aims to predict whether hotel bookings will be canceled in order to optimize operational planning and minimize financial losses. We utilize various machine learning algorithms such as decision trees (Random Forest), XGBoost, and K-Nearest Neighbors (KNN).
 
-# Projektbeschreibung
-Unser Ziel ist es, genau vorherzusagen, ob eine Hotelbuchung storniert wird oder nicht. Dafür verwenden wir historische Buchungsdaten und berücksichtigen wichtige Faktoren wie den Buchungszeitpunkt, die Zimmerkategorie und vorherige Stornierungen. Unser Modell soll in der Lage sein, das Stornierungsverhalten der Kunden vorherzusagen. Dadurch können Hotels ihre Betriebsplanung verbessern und leere Zimmer vermeiden.
+## Project Description
+Our goal is to accurately predict whether a hotel booking will be canceled or not. For this purpose, we use historical booking data and consider important factors such as the booking time, room category, and previous cancellations. Our model should be able to predict the cancellation behavior of customers, allowing hotels to improve their operational planning and avoid empty rooms.
 
-# Verwendete Algorithmen
-Entscheidungsbäume mit Random Forest: Wir kombinieren mehrere Entscheidungsbäume, um genaue Vorhersagen zu treffen. Der Random Forest-Algorithmus berücksichtigt die Vorhersagen aller Bäume und liefert ein konsistentes Ergebnis.
+## Algorithms Used
+Decision Trees with Random Forest: We combine multiple decision trees to make accurate predictions. The Random Forest algorithm takes into account the predictions of all the trees and provides a consistent result.
 
-XGBoost: Dieser Algorithmus basiert auf Entscheidungsbäumen und optimiert die Vorhersagen. XGBoost ist besonders effizient und liefert präzise Stornierungsvorhersagen.
+XGBoost: This algorithm is based on decision trees and optimizes predictions. XGBoost is particularly efficient and provides precise cancellation predictions.
 
-K-Nearest Neighbors (KNN): KNN basiert darauf, dass ähnliche Buchungen oft die gleiche Klassenzugehörigkeit haben. Wir verwenden KNN, um Vorhersagen basierend auf den Mehrheitsklassen ähnlicher Buchungen zu treffen.
+K-Nearest Neighbors (KNN): KNN is based on the observation that similar bookings often have the same class membership. We use KNN to make predictions based on the majority classes of similar bookings.
 
-Hier wird bei Bedarf noch weiter entschieden, ob weitere algorithmen zur Evaluation zugezogen werden.
+Further decisions will be made if additional algorithms are needed for evaluation.
 
-# Verwendung
-Erforderlichen Abhängigkeiten mit pip install -r requirements.txt installieren.
+## Usage
+Install the required dependencies using `pip install -r requirements.txt`.
 
-Notebook "Stornierungsvorhersage.ipynb" ausführen, um den Datensatz zu laden, das Modell zu trainieren und Vorhersagen zu generieren.
+Execute the "cancellation_prediction.ipynb" notebook to load the dataset, train the model, and generate predictions.
 
-Vorhersageergebnisse analysieren und bei Bedarf die Algorithmusparameter anpassen, um bessere Ergebnisse zu erzielen.
+Analyze the prediction results and adjust the algorithm parameters if necessary to achieve better results.
 
-# Beitrag
-Es bietet die Möglichkeit, die Stornierungsvorhersage im Hotelgewerbe zu verbessern und dadurch die Rentabilität und das Gästeerlebnis zu optimieren.
+## Contribution
+It provides the opportunity to improve cancellation prediction in the hotel industry, thereby optimizing profitability and guest experience.
