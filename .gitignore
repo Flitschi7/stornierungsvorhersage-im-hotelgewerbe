@@ -160,5 +160,3 @@ cython_debug/
 #.idea/
 
 #ignoring the incomplete files
-Titanic Data Preparation.ipynb
-Titanic Modelling, Evaluation and Deployment (FZ).ipynb
