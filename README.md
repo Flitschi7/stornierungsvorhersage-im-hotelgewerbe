@@ -18,7 +18,6 @@ Install the required dependencies using `pip install -r requirements.txt`.
 
 Execute the "cancellation_prediction.ipynb" notebook to load the dataset, train the model, and generate predictions.
 
-Analyze the prediction results and adjust the algorithm parameters if necessary to achieve better results.
 
 ## Contribution
 It provides the opportunity to improve cancellation prediction in the hotel industry, thereby optimizing profitability and guest experience.
