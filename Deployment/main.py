@@ -55,9 +55,9 @@ def prepare_data(*args):
 
 def convert_prediction_to_result(prediction):
     if prediction[0] == 1:
-        return "eine Stornierung"
+        return "eine"
     else:
-        return "keine Stornierung"
+        return "keine"
 
 @app.route('/')
 def booking_form():
