@@ -7,15 +7,15 @@
       <h1>Hotelbuchungsvorhersage Tool für StayAwhile</h1>
       <form action="/predict" method="post">
          <label for="total_stay">Aufenthaltslänge in Tagen:</label><br>
-         <input type="number" id="total_stay" name="total_stay" min="1"><br>
+         <input type="number" id="total_stay" name="total_stay" min="1" required><br>
          <label for="total_guests">Anzahl der Gäste:</label><br>
-         <input type="number" id="total_guests" name="total_guests" min="1"><br>
+         <input type="number" id="total_guests" name="total_guests" min="1" required><br>
          <label for="lead_time">Vorlaufzeit in Tagen:</label><br>
-         <input type="number" id="lead_time" name="lead_time" min="0"><br>
-         <label for="arrival_month">Arrival Month:</label><br>
-         <input type="number" id="arrival_month" name="arrival_month" min="1" max="12"><br>
+         <input type="number" id="lead_time" name="lead_time" min="0" required><br>
+         <label for="arrival_month">Ankunftsmonat:</label><br>
+         <input type="number" id="arrival_month" name="arrival_month" min="1" max="12" required><br>
          <label for="type_of_meal_plan">Art der Verpflegung:</label><br>
-         <select id="type_of_meal_plan" name="type_of_meal_plan">
+         <select id="type_of_meal_plan" name="type_of_meal_plan" required>
             <option value="" selected disabled>Bitte auswählen</option>
             <option value="Meal Plan 1">Meal Plan 1</option>
             <option value="Meal Plan 2">Meal Plan 2</option>
@@ -24,29 +24,29 @@
          </select>
          <br>
          <label for="required_car_parking_space">Parkplatz benötigt?:</label><br>
-         <select id="required_car_parking_space" name="required_car_parking_space">
+         <select id="required_car_parking_space" name="required_car_parking_space" required>
             <option value="" selected disabled>Bitte auswählen</option>
             <option value="1">Ja</option>
             <option value="0">Nein</option>
          </select>
          <br>
          <label for="repeated_guest">Wiederholter Gast?:</label><br>
-         <select id="repeated_guest" name="repeated_guest">
+         <select id="repeated_guest" name="repeated_guest" required>
             <option value="" selected disabled>Bitte auswählen</option>
             <option value="1">Ja</option>
             <option value="0">Nein</option>
          </select>
          <br>
          <label for="no_of_previous_cancellations">Anzahl vorheriger Stornierungen:</label><br>
-         <input type="number" id="no_of_previous_cancellations" name="no_of_previous_cancellations" min="0"><br>
+         <input type="number" id="no_of_previous_cancellations" name="no_of_previous_cancellations" min="0" required><br>
          <label for="no_of_previous_bookings_not_canceled">Anzahl vorheriger nicht stornierter Besuche:</label><br>
-         <input type="number" id="no_of_previous_bookings_not_canceled" name="no_of_previous_bookings_not_canceled" min="0"><br>
+         <input type="number" id="no_of_previous_bookings_not_canceled" name="no_of_previous_bookings_not_canceled" min="0" required><br>
          <label for="avg_price_per_room">Preis:</label><br>
          <input type="number" id="avg_price_per_room" name="avg_price_per_room" min="0" step="0.01"><br>
          <label for="no_of_special_requests">Anzahl der speziellen Anforderungen:</label><br>
-         <input type="number" id="no_of_special_requests" name="no_of_special_requests" min="0"><br>
+         <input type="number" id="no_of_special_requests" name="no_of_special_requests" min="0" required><br>
          <label for="room_type_reserved">Zimmertyp:</label><br>
-         <select id="room_type_reserved" name="room_type_reserved">
+         <select id="room_type_reserved" name="room_type_reserved" required>
             <option value="" selected disabled>Bitte auswählen</option>
             <option value="Room Type 1">Room Type 1</option>
             <option value="Room Type 2">Room Type 2</option>
@@ -57,7 +57,7 @@
          </select>
          <br>
          <label for="market_segment_type">Buchungsart:</label><br>
-         <select id="market_segment_type" name="market_segment_type">
+         <select id="market_segment_type" name="market_segment_type" required>
             <option value="" selected disabled>Bitte auswählen</option>
             <option value="Complementary">Complementary</option>
             <option value="Corporate">Corporate</option>

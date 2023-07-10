@@ -1,5 +1,3 @@
-%pip install r-requirements.txt
-
 from flask import Flask, request, render_template
 import joblib
 import pandas as pd
@@ -55,9 +53,9 @@ def prepare_data(*args):
 
 def convert_prediction_to_result(prediction):
     if prediction[0] == 1:
-        return "eine"
-    else:
         return "keine"
+    else:
+        return "eine"
 
 @app.route('/')
 def booking_form():
