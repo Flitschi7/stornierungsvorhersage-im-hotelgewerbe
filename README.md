@@ -7,17 +7,15 @@ My goal is to accurately predict whether a hotel booking will be canceled or not
 ## Algorithms Used
 Decision Trees with Random Forest: I combine multiple decision trees to make accurate predictions. The Random Forest algorithm takes into account the predictions of all the trees and provides a consistent result.
 
-XGBoost: This algorithm is based on decision trees and optimizes predictions. XGBoost is particularly efficient and provides precise cancellation predictions.
-
 K-Nearest Neighbors (KNN): KNN is based on the observation that similar bookings often have the same class membership. I use KNN to make predictions based on the majority classes of similar bookings.
 
-Further decisions will be made if additional algorithms are needed for evaluation.
 
 ## Usage
 Install the required dependencies using `pip install -r requirements.txt`.
 
 Execute the "cancellation_prediction.ipynb" notebook to load the dataset, train the model, and generate predictions.
 
+To directly Access the model which interprets the data and gives you a prediction, go to: https://stayawhile.flitschi7.repl.co/
 
 ## Contribution
 It provides the opportunity to improve cancellation prediction in the hotel industry, thereby optimizing profitability and guest experience.
