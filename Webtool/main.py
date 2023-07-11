@@ -1,6 +1,9 @@
+#pip install r- requirements.txt
+
 from flask import Flask, request, render_template
 import joblib
 import pandas as pd
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -87,8 +90,7 @@ def predict():
 
     prediction = model.predict(data)
     result = convert_prediction_to_result(prediction)
-    print(result)
-    return render_template('result.html', result=result)
+    return jsonify({'result': result})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
