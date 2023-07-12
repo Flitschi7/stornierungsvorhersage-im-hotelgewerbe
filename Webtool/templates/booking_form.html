@@ -14,6 +14,9 @@
          .form-group {
          margin-bottom: 0.5rem;
          }
+         .no-color-change {
+         background-color: inherit !important;
+         }
       </style>
    </head>
    <body>
@@ -109,13 +112,13 @@
                         </div>
                      </div>
                   </div>
-               <button type="submit" class="btn btn-primary w-100">Absenden</button>
+                  <button type="submit" class="btn btn-primary w-100">Absenden</button>
                </form>
                <div id="result" class="card mt-4" style="display: none;">
                   <div class="card-header">
-                     <h2 class="card-title">Ergebnis</h2>
+                     <h2 class="card-title text-center">Ergebnis</h2>
                   </div>
-                  <div class="card-body">
+                  <div class="card-body text-center" id="result-body">
                      <p class="card-text">Die Vorhersage ist, dass wahrscheinlich <span id="result-value" class="font-weight-bold"></span> Stornierung erfolgen wird</p>
                   </div>
                </div>
@@ -124,32 +127,30 @@
       </div>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script>
-    console.log("Script is running");
-    $(document).ready(function() {
-        $('form').on('submit', function(e) {
-            e.preventDefault();  
-            var formData = $(this).serialize();  
-            $.post('/predict', formData, function(data) {
-                $('#result-value').text(data.result);  
-
-                if (data.result === 'keine') {
-                    $('#result-value').addClass('bg-success');  
-                    $('#result').addClass('bg-success'); 
-                } else {
-                    $('#result-value').addClass('bg-danger');  
-                    $('#result').addClass('bg-danger'); 
-                }
-
-                $('#result').show();
-            }, 'json')
-            .fail(function(xhr, status, error) {
-                console.log('Error:', error);
-                console.log('Status:', status);
-                console.log('XHR:', xhr);
-            });
-        });
-    });
-</script>
+      <script>
+         console.log("Script is running");
+         $(document).ready(function() {
+             $('form').on('submit', function(e) {
+                 e.preventDefault();  
+                 var formData = $(this).serialize();  
+                 $.post('/predict', formData, function(data) {
+                     $('#result-value').text(data.result);  
+         
+         if (data.result === 'keine') {
+         $('#result-body').addClass('bg-success'); 
+         } else {
+         $('#result-body').addClass('bg-danger'); 
+         }
+         
+                     $('#result').show();
+                 }, 'json')
+                 .fail(function(xhr, status, error) {
+                     console.log('Error:', error);
+                     console.log('Status:', status);
+                     console.log('XHR:', xhr);
+                 });
+             });
+         });
+      </script>
    </body>
 </html>
