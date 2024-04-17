@@ -12,7 +12,6 @@ Install the required dependencies using `pip install -r requirements.txt`.
 
 Execute the "hotel_cancellation.ipynb" notebook to load the dataset, train the model, and generate predictions.
 
-To directly Access the best model from this notebook which interprets the data and gives you a prediction, go to: https://stayawhile.flitschi7.repl.co/
-
+To directly Access the best model from this notebook which interprets the data and gives you a prediction, go to: https://stornierungsvorhersage.flitschi.vip
 ## Contribution
 It provides the opportunity to improve cancellation prediction in the hotel industry, thereby optimizing profitability and guest experience.
